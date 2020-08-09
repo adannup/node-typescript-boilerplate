@@ -6,3 +6,6 @@ dist/
 
 #System Files
 .DS_Store
+
+# Enviroment
+.env
