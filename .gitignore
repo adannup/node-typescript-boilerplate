@@ -9,3 +9,6 @@ dist/
 
 # Enviroment
 .env
+
+# Testing
+coverage

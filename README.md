@@ -237,3 +237,48 @@ This does three things:
 * Enables `eslint-plugin-prettier`.
 * Sets the `prettier/prettier` rule to `"error"`.
 * Extends the `eslint-config-prettier` configuration.
+
+# [Testing (ts-jest)](https://github.com/kulshekhar/ts-jest)
+
+### Getting Started
+These instructions will get you setup to use ts-jest in your project. For more detailed documentation, please check online documentation.
+
+#### Prerequisites
+
+`npm i -D jest typescript`
+
+#### Installing
+`npm i -D ts-jest @types/jest`
+
+#### Creating config
+`npx ts-jest config:init`
+
+## [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest)
+
+### Installation
+
+```console
+$ npm install --save-dev eslint eslint-plugin-jest
+```
+
+> Note: If you installed ESLint globally then you must also install `eslint-plugin-jest` globally.
+
+### Usage
+Add `jest` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+
+```json
+{
+  "plugins": ["jest"]
+}
+```
+
+### Recommended
+This plugin exports a recommended configuration that enforces good testing practices.
+
+To enable this configuration use the `extends` property in your `.eslintrc` config file:
+
+```json
+{
+  "extends": ["plugin:jest/recommended"]
+}
+```
